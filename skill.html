@@ -39,8 +39,10 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-            <li><a class="nav-link scrollto active" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="skill.html">Skills</a></li>
+            <li><a class="nav-link scrollto" href="about.html">About</a></li>
+            <li>
+              <a class="nav-link scrollto active" href="skill.html">Skills</a>
+            </li>
             <li>
               <a class="nav-link scrollto" href="project.html">Project</a>
             </li>
@@ -55,63 +57,81 @@
     </header>
     <!-- End Header -->
 
-    <!-- ======= about selection ======= -->
-    <section id="about" class="hero d-flex align-items-center">
-      <div class="container">
-        <div class="row flex-lg-row flex-column-reverse">
-          <div class="col-lg-6 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up">About Me</h1>
-            <h3>
-              Saya adalah Fattah Ahmad, seorang web developer junior dengan
-              latar belakang pendidikan di bidang rekayasa perangkat lunak. Saya
-              memiliki passion yang kuat dalam bidang teknologi , dan saya
-              selalu berusaha untuk belajar hal hal baru dalam pemrograman.
-            </h3>
-            <h2 data-aos="fade-up" data-aos-delay="400">
-              Welcome to my portofolio website.
-            </h2>
-          </div>
-          <div
-            class="col-lg-6 about-img flex-lg-row d-flex align-items-center justify-content-center"
-            data-aos="zoom-out"
-            data-aos-delay="200"
+    <!-- ======= Values Section ======= -->
+    <section id="values" class="values">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <p>Skills</p>
+          <!-- Tabs -->
+          <ul
+            class="nav nav-pills mb-3 align-items-center justify-content-center d-flex"
           >
-            <img src="img/myphoto.webp" class="img-fluid" alt="" />
+            <li>
+              <a class="nav-link active" data-bs-toggle="pill" href="#tab1"
+                >Language</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" data-bs-toggle="pill" href="#tab2"
+                >Framework</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" data-bs-toggle="pill" href="#tab3">Library</a>
+            </li>
+            <li>
+              <a class="nav-link" data-bs-toggle="pill" href="#tab4">DBMS</a>
+            </li>
+          </ul>
+          <!-- End Tabs -->
+        </header>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <img src="assets/img/values-1.png" class="img-fluid" alt="" />
+              <h3>Ad cupiditate sed est odio</h3>
+              <p>
+                Eum ad dolor et. Autem aut fugiat debitis voluptatem
+                consequuntur sit. Et veritatis id.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 mt-4 mt-lg-0"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="box">
+              <img src="assets/img/values-2.png" class="img-fluid" alt="" />
+              <h3>Voluptatem voluptatum alias</h3>
+              <p>
+                Repudiandae amet nihil natus in distinctio suscipit id.
+                Doloremque ducimus ea sit non.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 mt-4 mt-lg-0"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="box">
+              <img src="assets/img/values-3.png" class="img-fluid" alt="" />
+              <h3>Fugit cupiditate alias nobis.</h3>
+              <p>
+                Quam rem vitae est autem molestias explicabo debitis sint. Vero
+                aliquid quidem commodi.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End about -->
+    <!-- End Values Section -->
 
-    <!-- timeline section -->
-    <section id="timeline d-flex align-items-center">
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-lg-6 justify-content-flex-start">
-          <h1 style="margin-left: 1.2rem;">Education</h1>
-          <ul class="timeline-3">
-            <li>
-              <a href="#!">Universitas Catur Insan Cendekia</a>
-              <a href="#!" class="float-end">2023 - Present</a>
-              <p class="mt-2">Computer Science</p>
-            </li>
-            <li>
-              <a href="#!">SMKN 1 Cirebon</a>
-              <a href="#!" class="float-end">2019 - 2022</a>
-              <p class="mt-2">Software Engineering</p>
-            </li>
-            <li>
-              <a href="#!">Awesome Employers</a>
-              <a href="#!" class="float-end">1 April, 2014</a>
-              <p class="mt-2">Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt
-                vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-    <!-- end Timeline -->
     <a
       href="#"
       class="back-to-top d-flex align-items-center justify-content-center"
