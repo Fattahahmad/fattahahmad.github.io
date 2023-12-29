@@ -55,130 +55,43 @@
   </header>
   <!-- End Header -->
 
-  <section id="values" class="values">
+  <section id="portfolio" class="portfolio">
     <div class="container" data-aos="fade-up">
       <header class="section-header">
-        <p>Skills</p>
-        <!-- Tabs -->
-        <ul class="nav nav-pills mb-3 align-items-center justify-content-center d-flex">
-          <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Web</a></li>
-          <!-- <li><a class="nav-link" data-bs-toggle="pill" href="#tab2">Framework</a></li> -->
-          <!-- <li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Library</a></li> -->
-          <!-- <li><a class="nav-link" data-bs-toggle="pill" href="#tab4">DBMS</a></li> -->
-        </ul>
-        <!-- End Tabs -->
+        <p>Project</p> <br>
+        <h2>Beberapa project yang pernah saya kerjakan</h2>
       </header>
-      <div class="tab-content">
-        <!-- Tab 1 Content -->
-        <div class="tab-pane fade show active" id="tab1">
-          <div class="row">
-            <!-- Add your tab 1 content here -->
-            <div class="col-lg-3 mt-4 mt-lg-0 " data-aos="fade-up" data-aos-delay="200">
-              <div class="box">
-                <img src="img/html5-logo.webp" class="img-fluid" alt="" />
-                <h3>HTML</h3>
-                
-              </div>
-            </div>
-            <div class="col-lg-3 mt-4 mt-lg-0 " data-aos="fade-up" data-aos-delay="200">
-              <div class="box">
-                <img src="img/csslogo.webp" class="img-fluid" alt="" />
-                <h3>CSS</h3>
-                
-              </div>
-            </div>
-            <div class="col-lg-3 mt-4 mt-lg-0 " data-aos="fade-up" data-aos-delay="200">
-              <div class="box">
-                <img src="img/phplogo.webp" class="img-fluid" alt="" />
-                <h3>PHP</h3>
-                
-              </div>
-            </div>
-            <!-- <div class="col-lg-3 mt-4 mt-lg-0 " data-aos="fade-up" data-aos-delay="200">
-              <div class="box">
-                <img src="assets/img/values-1.png" class="img-fluid" alt="" />
-                <h3>Ad cupiditate sed est odio</h3>
-                <p>
-                  Eum ad dolor et. Autem aut fugiat debitis voluptatem
-                  consequuntur sit. Et veritatis id.
-                </p>
-              </div>
-            </div> -->
-          </div>
-        </div>
 
-        <!-- Tab 2 Content -->
-        <div class="tab-pane fade" id="tab2">
-          <div class="row">
-            <!-- Add your tab 2 content here -->
-            <div class="col-lg-3 mt-4 mt-lg-0 " data-aos="fade-up" data-aos-delay="200">
-              <div class="box">
-                <img src="img/laravellogo.webp" class="img-fluid" alt="" />
-                <h3>Laravel</h3>
-              </div>
-            </div>
-            <!-- <div class="col-lg-3 mt-4 mt-lg-0 " data-aos="fade-up" data-aos-delay="200">
-              <div class="box">
-                <img src="assets/img/values-1.png" class="img-fluid" alt="" />
-                <h3>Ad cupiditate sed est odio</h3>
-                <p>
-                  Eum ad dolor et. Autem aut fugiat debitis voluptatem
-                  consequuntur sit. Et veritatis id.
-                </p>
-              </div>
-            </div> -->
-            <!-- <div class="col-lg-3 mt-4 mt-lg-0 " data-aos="fade-up" data-aos-delay="200">
-              <div class="box">
-                <img src="assets/img/values-1.png" class="img-fluid" alt="" />
-                <h3>Ad cupiditate sed est odio</h3>
-                <p>
-                  Eum ad dolor et. Autem aut fugiat debitis voluptatem
-                  consequuntur sit. Et veritatis id.
-                </p>
-              </div>
-            </div> -->
-            <!-- <div class="col-lg-3 mt-4 mt-lg-0 " data-aos="fade-up" data-aos-delay="200">
-              <div class="box">
-                <img src="assets/img/values-1.png" class="img-fluid" alt="" />
-                <h3>Ad cupiditate sed est odio</h3>
-                <p>
-                  Eum ad dolor et. Autem aut fugiat debitis voluptatem
-                  consequuntur sit. Et veritatis id.
-                </p>
-              </div>
-            </div> -->
-          </div>
-        </div>
-
-        <!-- Tab 3 Content -->
-        <div class="tab-pane fade" id="tab3">
-          <div class="row">
-            <!-- Add your tab 3 content here -->
-            <div class="col-lg-3 mt-4 mt-lg-0 " data-aos="fade-up" data-aos-delay="200">
-              <div class="box">
-                <img src="img/bootstraplogo.webp" class="img-fluid" alt="" />
-                <h3>Bootstrap</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tab 4 Content -->
-        <div class="tab-pane fade" id="tab4">
-          <div class="row">
-            <!-- Add your tab 4 content here -->
-            <div class="col-lg-3 mt-4 mt-lg-0 " data-aos="fade-up" data-aos-delay="200">
-              <div class="box">
-                <img src="img/mysqllogo.svg" class="img-fluid" alt="" />
-                <h3>MySQL</h3>
-              </div>
-            </div>
-          </div>
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-card">Card</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
         </div>
       </div>
-    </div>
+
+      <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="img/portofolio-1.webp" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>twasco landing page</h4>
+              <p>Web</p>
+              <div class="portfolio-links">
+                <a href="img/portofolio-1.webp" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                <a href="https://twascode.github.io/" title="View Demo"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+          </div>
+
+      </div>
   </section>
-  <!-- End Skill Section -->
+  <!-- End Portfolio Item -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
