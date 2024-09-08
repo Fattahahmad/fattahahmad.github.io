@@ -697,6 +697,13 @@ ul.timeline-3 > li:before {
   border-color: #4154f1;
 }
 
+/* @media (max-width: 768px) {
+  .skill .nav{
+  display: inline;
+}
+} */
+
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -1770,6 +1777,21 @@ ul.timeline-3 > li:before {
 .contact .php-email-form button[type=submit]:hover {
   background: #5969f3;
 }
+
+@media (max-width: 992px) {
+  .contact .contact-section{
+    /* display: flex; */
+    flex-direction: column-reverse;
+}
+}
+
+@media (max-width: 768px) {
+  .contact .contact-section{
+    /* display: flex; */
+    flex-direction: column-reverse;
+}
+}
+
 
 @keyframes animate-loading {
   0% {
