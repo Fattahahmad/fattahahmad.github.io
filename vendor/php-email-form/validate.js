@@ -11,7 +11,7 @@
       let action = "https://getform.io/f/YOUR_FORM_ID"; // Ubah dengan URL form action
       let formData = new FormData(thisForm);
 
-      // Reset messages dan tambahkan loading
+      // Reset pesan error dan tampilkan loading
       thisForm.querySelector('.loading').classList.add('d-block');
       thisForm.querySelector('.error-message').classList.remove('d-block');
       thisForm.querySelector('.sent-message').classList.remove('d-block');
@@ -28,16 +28,19 @@
         'Accept': 'application/json'
       }
     })
-    .then(response => {
+    .then(response => response.json())  // Mengambil respons JSON
+    .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (response.ok) {
+      
+      // Cek apakah 'success' dari JSON true
+      if (data.success) {
         thisForm.querySelector('.sent-message').classList.add('d-block');
-        thisForm.reset();
+        thisForm.reset();  // Reset form setelah sukses
       } else {
-        throw new Error(`An error occurred: ${response.statusText}`);
+        throw new Error(data.message || 'Form submission failed');
       }
     })
-    .catch(error => {
+    .catch((error) => {
       displayError(thisForm, error);
     });
   }
