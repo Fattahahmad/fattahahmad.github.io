@@ -183,7 +183,39 @@
     <script src="vendor/glightbox/js/glightbox.min.js"></script>
     <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="vendor/php-email-form/validate.js"></script>
+    <!-- <script src="vendor/php-email-form/validate.js"></script> -->
+    <script>
+      document
+        .querySelector(".php-email-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var form = this;
+          var formData = new FormData(form);
+
+          // Menampilkan pesan loading
+          form.querySelector(".loading").classList.add("d-block");
+
+          fetch(form.action, {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => {
+              form.querySelector(".loading").classList.remove("d-block");
+              if (response.ok) {
+                form.querySelector(".sent-message").classList.add("d-block");
+                form.reset(); // Reset form setelah pesan berhasil dikirim
+              } else {
+                throw new Error("Form submission failed.");
+              }
+            })
+            .catch((error) => {
+              form.querySelector(".loading").classList.remove("d-block");
+              form.querySelector(".error-message").innerHTML = error;
+              form.querySelector(".error-message").classList.add("d-block");
+            });
+        });
+    </script>
 
     <!-- Template Main JS File -->
     <script src="js/main.js"></script>
