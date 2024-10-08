@@ -8,7 +8,7 @@
       event.preventDefault();
 
       let thisForm = this;
-      let action = "https://getform.io/f/YOUR_FORM_ID"; // Ubah dengan URL form action
+      let action = "https://getform.io/f/bdryvzvb"; // Ubah dengan URL form action
       let formData = new FormData(thisForm);
 
       // Reset pesan error dan tampilkan loading
